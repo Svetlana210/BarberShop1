@@ -1,0 +1,30 @@
+.button {
+  min-width: 160px;
+  border-radius: 25px;
+  padding: 12px 20px;
+
+  border: 1px solid var(--accent-color);
+  background-color: transparent;
+  border-color: var(--accent-color);
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.button-header {
+  color: var(--text-white-color);
+
+  transition: color var(--transition-dur-cub),
+    background-color var(--transition-dur-cub);
+}
+.button-header:hover,
+.button-header:focus {
+  color: var(--text-white-color);
+  background-color: var(--accent-color);
+}
+.button {
+  cursor: pointer;
+}

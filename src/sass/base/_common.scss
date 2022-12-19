@@ -1,0 +1,36 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  color: var(--text-color);
+
+  background-color: var(--text-white-color);
+  font-family: Open Sans, sans-serif;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.link {
+  text-decoration: none;
+}
+h1,
+h2 {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}

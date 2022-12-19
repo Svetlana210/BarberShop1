@@ -1,0 +1,12 @@
+.logo-link {
+  display: block;
+  width: 69px;
+  height: 55px;
+  margin-right: 75px;
+}
+
+@media screen and (max-width: 1199px) {
+  .logo-link {
+    margin-right: 10px;
+  }
+}
