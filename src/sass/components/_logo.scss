@@ -2,11 +2,18 @@
   display: block;
   width: 69px;
   height: 55px;
-  margin-right: 75px;
+  margin-right: 10px;
+  fill: var(--text-white-color);
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .logo-link {
-    margin-right: 10px;
+    fill: #000;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-link {
+    margin-right: 75px;
   }
 }
