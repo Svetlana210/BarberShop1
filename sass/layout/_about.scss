@@ -41,12 +41,12 @@
   .about-photo-container {
     display: block;
   }
-  .img-desk {
-    display: none;
-  }
-  .img-tab {
-    display: block;
-  }
+  // .img-desk {
+  //   display: none;
+  // }
+  // .img-tab {
+  //   display: block;
+  // }
 
   .about-container {
     display: flex;
@@ -76,13 +76,13 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .img-tab {
-    display: none;
-  }
-  .img-desk {
-    display: block;
-  }
+@media screen and (min-width: 1280px) {
+  // .img-tab {
+  //   display: none;
+  // }
+  // .img-desk {
+  //   display: block;
+  // }
   .about-list {
     display: flex;
     margin-right: 64px;

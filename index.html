@@ -86,36 +86,43 @@
           <div class="about-photo-container">
             <ul class="about-list">
               <li class="about-item">
-                <img
-                  class="img-tab"
-                  src="./images/about1-table.jpg"
-                  alt="#"
-                  width="330"
-                  height="235"
-                />
-                <img
-                  class="img-desk"
-                  src="./images/about1-desk.jpg"
-                  alt="#"
-                  width="270"
-                  height="445"
-                />
+                <picture>
+                  <source
+                    srcset="
+                    ./images/about1-desk.jpg  1x,
+                    ./images/about1-desk@2x.jpg .jpg 2x
+                  "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                  ./images/about1-table.jpg  1x,
+                    ./images/about1-table@2x.jpg .jpg 2x
+                  "
+                    media="(min-width: 768px)"
+                  />
+                  <img class="about-item__img" src="./images/about1-desk.jpg" alt="about1" />
+                </picture>
               </li>
+
               <li class="about-item">
-                <img
-                  class="img-tab"
-                  src="./images/about2-table.jpg"
-                  alt="#"
-                  width="330"
-                  height="235"
-                />
-                <img
-                  class="img-desk"
-                  src="./images/about2-desk.jpg"
-                  alt="#"
-                  width="270"
-                  height="445"
-                />
+                <picture>
+                  <source
+                    srcset="
+                    ./images/about2-desk.jpg  1x,
+                    ./images/about2-desk@2x.jpg .jpg 2x
+                  "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                  ./images/about2-table.jpg  1x,
+                    ./images/about2-table@2x.jpg .jpg 2x
+                  "
+                    media="(min-width: 768px)"
+                  />
+                  <img class="about-item__img" src="./images/about2-desk.jpg" alt="about2" />
+                </picture>
               </li>
             </ul>
           </div>
@@ -137,7 +144,7 @@
       </section>
       <!-------------------- SERVICE AND PRICES ------------------->
       <section class="price-section section">
-        <div class="container service-container">
+        <div class="container price-container">
           <p class="suptitle suptitle-theme-dark">SPEND YOUR TIME WITH THE BEST MASTERS</p>
           <h2 class="price-title">Services and prices</h2>
           <div class="price-table">
@@ -166,12 +173,223 @@
         </div>
       </section>
       <!-------------------- FEATURES ------------------->
-      <section class="features">
-        <div class="container features-container"></div>
+      <section class="features section">
+        <div class="container features-container">
+          <div class="left-feature-part">
+            <ul class="feature-list">
+              <li class="feature-item">
+                <p class="feature-title">
+                  600
+                  <span class="feature-plus">+</span>
+                </p>
+                <p class="feature-text">Satisfied customers per day</p>
+              </li>
+              <li class="feature-item">
+                <p class="feature-title">50 <span class="feature-plus">+</span></p>
+                <p class="feature-text">Awards for excellent service</p>
+              </li>
+              <li class="feature-item">
+                <p class="feature-title">20 <span class="feature-plus">+</span></p>
+                <p class="feature-text">Gotham`s best barbers</p>
+              </li>
+              <li class="feature-item">
+                <p class="feature-title">100 <span class="feature-plus">+</span></p>
+                <p class="feature-text">Gifts for regular customers</p>
+              </li>
+            </ul>
+          </div>
+          <div class="right-feature-part">
+            <p class="suptitle suptitle-theme-light">OLD TRADITIONAL SCHOOL</p>
+            <h2 class="feature-big-title">Why people come to us?</h2>
+            <p class="feature-text-big">
+              Only good things are said about us. But it's better to see and feel 1 time than read
+              10 times.
+            </p>
+          </div>
+        </div>
       </section>
       <!-------------------- MASTERS ------------------->
-      <section class="masters">
-        <div class="container masters-container"></div>
+      <section class="master-section section">
+        <div class="container masters-container">
+          <div class="master-text-container">
+            <p class="suptitle suptitle-theme-light">FOR TRUE ENJOYERS OF THE ATMOSPHERE</p>
+            <h2 class="master-title">Our barbers</h2>
+          </div>
+
+          <ul class="master-list">
+            <li class="master-item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/master1-desk.jpg  1x,
+                    ./images/master1-desk@2x.jpg .jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                   ./images/master1-table.jpg  1x,
+                    ./images/master1-table@2x.jpg .jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                  ./images/master1-mob.jpg  1x,
+                    ./images/master1-mob@2x.jpg .jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img class="masters-item__img" src="./images/master1-mob.jpg" alt="Master1" />
+              </picture>
+              <div class="master-text-part">
+                <h3 lang="en" class="master-subtitle">John Smith</h3>
+                <p lang="en" class="master-text-small">Extreme Barber</p>
+                <ul class="master-icon-list">
+                  <li class="icon-item">
+                    <a href="#" class="icon-link">
+                      <svg class="master-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-item">
+                    <a href="#" class="icon-link">
+                      <svg class="master-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-twitter"></use></svg
+                    ></a>
+                  </li>
+                  <li class="icon-item">
+                    <a href="#" class="icon-link">
+                      <svg class="master-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-facebook"></use></svg
+                    ></a>
+                  </li>
+                  <li class="icon-item">
+                    <a href="#" class="icon-link">
+                      <svg class="master-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-linkedin"></use></svg
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="master-item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/master2-desk.jpg  1x,
+                    ./images/master2-desk@2x.jpg .jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                  ./images/master2-table.jpg  1x,
+                    ./images/master2-table@2x.jpg .jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                      ./images/master2-mob.jpg  1x,
+                    ./images/master2-mob@2x.jpg .jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img class="masters-item__img" src="./images/master2-mob.jpg" alt="Master2" />
+              </picture>
+              <div class="master-text-part">
+                <h3 lang="en" class="master-subtitle">Michele Doe</h3>
+                <p lang="en" class="master-text-small">Extreme Barber</p>
+                <ul class="master-icon-list">
+                  <li class="icon-item">
+                    <a href="#" class="icon-link">
+                      <svg class="master-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-item">
+                    <a href="#" class="icon-link">
+                      <svg class="master-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-twitter"></use></svg
+                    ></a>
+                  </li>
+                  <li class="icon-item">
+                    <a href="#" class="icon-link">
+                      <svg class="master-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-facebook"></use></svg
+                    ></a>
+                  </li>
+                  <li class="icon-item">
+                    <a href="#" class="icon-link">
+                      <svg class="master-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-linkedin"></use></svg
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="master-item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/master3-desk.jpg  1x,
+                    ./images/master3-desk@2x.jpg .jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/master3-table.jpg  1x,
+                    ./images/master3-table@2x.jpg .jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                   ./images/master3-mob.jpg  1x,
+                    ./images/master3-mob@2x.jpg .jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img class="masters-item__img" src="./images/master3-mob.jpg" alt="Master3" />
+              </picture>
+              <div class="master-text-part">
+                <h3 lang="en" class="master-subtitle">Alan</h3>
+                <p lang="en" class="master-text-small">Extreme Barber</p>
+                <ul class="master-icon-list">
+                  <li class="icon-item">
+                    <a href="#" class="icon-link">
+                      <svg class="master-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-item">
+                    <a href="#" class="icon-link">
+                      <svg class="master-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-twitter"></use></svg
+                    ></a>
+                  </li>
+                  <li class="icon-item">
+                    <a href="#" class="icon-link">
+                      <svg class="master-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-facebook"></use></svg
+                    ></a>
+                  </li>
+                  <li class="icon-item">
+                    <a href="#" class="icon-link">
+                      <svg class="master-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-linkedin"></use></svg
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-------------------- PORTFOLIO ------------------->
       <section class="portfolio">
