@@ -1,0 +1,113 @@
+.price-section {
+  text-align: center;
+  background-color: rgba(17, 19, 25, 0.8);
+  background-image: linear-gradient(rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)),
+    url('../images/service-img-mob.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.price-list {
+  display: flex;
+  width: 418px;
+
+  display: block;
+  padding: 0 30px;
+}
+
+.price-table {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.price-title {
+  margin-bottom: 44px;
+  text-align: start;
+  color: var(--text-white-color);
+
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+.price-list-left {
+  background-image: none;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.price-list-right {
+  background-image: none;
+  padding-bottom: 30px;
+}
+.price-item {
+  display: flex;
+  align-items: baseline;
+  color: var(--table-text-color);
+  font-size: 14px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+.price-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.underline {
+  height: 1px;
+  flex-grow: 1;
+  background-color: rgba(157, 164, 189, 0.12);
+}
+.price-button {
+  color: var(--text-white-color);
+  background-color: transparent;
+  transition: background-color var(--transition-dur-cub);
+}
+.price-button:hover,
+.price-button:focus {
+  background-color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .price-section {
+    background-image: linear-gradient(rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)),
+      url('../images/service-table.jpg');
+  }
+  .price-list {
+    width: 690px;
+    padding: 0 40px;
+  }
+  .price-list-left {
+    background-image: none;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .price-list-right {
+    background-image: none;
+    padding-bottom: 30px;
+  }
+  .price-item {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .price-section {
+    background-image: linear-gradient(rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)),
+      url('../images/service1-desk.jpg');
+  }
+
+  .price-list {
+    width: 585px;
+    margin-bottom: 50px;
+  }
+  .price-table {
+    display: flex;
+    flex-direction: row;
+    background-image: none;
+    margin-bottom: 0px;
+  }
+  .price-list-left {
+    background-image: linear-gradient(180deg, #171a24, rgba(23, 26, 36, 0.2));
+  }
+  .price-list-right {
+    background-image: linear-gradient(180deg, #090b13, rgba(9, 11, 19, 0.2));
+  }
+}
