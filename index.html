@@ -81,7 +81,7 @@
         </div>
       </section>
       <!-------------------- ABOUT ------------------->
-      <section class="about section">
+      <section id="about" class="about section">
         <div class="container about-container">
           <div class="about-photo-container">
             <ul class="about-list">
@@ -143,7 +143,7 @@
         </div>
       </section>
       <!-------------------- SERVICE AND PRICES ------------------->
-      <section class="price-section section">
+      <section id="service" class="price-section section">
         <div class="container price-container">
           <p class="suptitle suptitle-theme-dark">SPEND YOUR TIME WITH THE BEST MASTERS</p>
           <h2 class="price-title">Services and prices</h2>
@@ -209,7 +209,7 @@
         </div>
       </section>
       <!-------------------- MASTERS ------------------->
-      <section class="master-section section">
+      <section id="barbers" class="master-section section">
         <div class="container masters-container">
           <div class="master-text-container">
             <p class="suptitle suptitle-theme-light">FOR TRUE ENJOYERS OF THE ATMOSPHERE</p>
@@ -392,11 +392,90 @@
         </div>
       </section>
       <!-------------------- PORTFOLIO ------------------->
-      <section class="portfolio">
-        <div class="container portfolio-container"></div>
+      <section class="portfolio section">
+        <div class="container portfolio-container">
+          <h2 class="visually-hidden">empty</h2>
+          <p class="portfolio-text suptitle suptitle-theme-light">
+            IN LATIN, "BARBA" MEANS "BEARD"
+          </p>
+          <ul class="portfolio-list">
+            <li class="portfolio-item">
+              <picture>
+                <source
+                  srcset="./images/port1-desk.jpg 1x, ./images/port1-desk@2x.jpg 2x"
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="./images/port1-table.jpg 1x, ./images/port1-table@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/port1-mob.jpg 1x, ./images/port1-mob@2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img class="port-item__img" src="./images/port1-mob.jpg" alt="port1" />
+              </picture>
+            </li>
+            <li class="portfolio-item">
+              <picture>
+                <source
+                  srcset="./images/port2-desk.jpg 1x, ./images/port2-desk@2x.jpg 2x"
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="./images/port2-table.jpg 1x, ./images/port2-table@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/port2-mob.jpg 1x, ./images/port2-mob@2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img class="port-item__img" src="./images/port2-mob.jpg" alt="port2" />
+              </picture>
+            </li>
+            <li class="portfolio-item">
+              <picture>
+                <source
+                  srcset="./images/port3-desk.jpg 1x, ./images/port3-desk@2x.jpg 2x"
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="./images/port3-table.jpg 1x, ./images/port3-table@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/port3-mob.jpg 1x, ./images/port3-mob@2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img class="port-item__img" src="./images/port3-mob.jpg" alt="port3" />
+              </picture>
+            </li>
+            <li class="portfolio-item">
+              <picture>
+                <source
+                  srcset="./images/port4-desk.jpg 1x, ./images/port4-desk@2x.jpg 2x"
+                  media="(min-width: 1280px)"
+                  width="270"
+                  height="360"
+                />
+                <source
+                  srcset="./images/port4-table.jpg 1x, ./images/port4-table@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/port4-mob.jpg 1x, ./images/port4-mob@2x.jpg 2x"
+                  media="(min-width: 320px)"
+                  width="418"
+                  height="360"
+                />
+                <img class="port-item__img" src="./images/port4-mob.jpg" alt="port4" />
+              </picture>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-------------------- CONTACTS ------------------->
-      <section class="contacts">
+      <section id="contacts" class="contacts">
         <div class="container contacts-container"></div>
       </section>
     </main>

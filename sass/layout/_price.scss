@@ -8,7 +8,7 @@
 }
 .price-list {
   display: flex;
-  width: 418px;
+  max-width: 418px;
 
   display: block;
   padding: 0 30px;
@@ -71,7 +71,7 @@
       url('../images/service-table.jpg');
   }
   .price-list {
-    width: 690px;
+    max-width: 690px;
     padding: 0 40px;
   }
   .price-list-left {
@@ -88,7 +88,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .price-section {
     background-image: linear-gradient(rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)),
       url('../images/service1-desk.jpg');

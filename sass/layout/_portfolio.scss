@@ -1,0 +1,29 @@
+.portfolio-text {
+  margin-bottom: 44px;
+}
+.portfolio-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+}
+.port-item__img {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .portfolio-list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+}

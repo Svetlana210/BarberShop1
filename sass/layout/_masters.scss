@@ -52,11 +52,13 @@
 .master-icon {
   fill: currentColor;
 }
-
+.masters-item__img {
+  width: 100%;
+}
 @media screen and (min-width: 768px) {
-  .masters-container {
-    width: 1200px;
-  }
+  // .masters-container {
+  //   width: 768px;
+  // }
   .master-text-container {
     margin-left: 120px;
   }
