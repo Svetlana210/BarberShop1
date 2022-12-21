@@ -1,27 +1,27 @@
-.contact-section-main {
-  background-image: linear-gradient(rgba(25, 28, 38, 0.9), rgba(25, 28, 38, 0.9)),
-    url('../images/contacts-mob.jpg');
-
-  background-size: 50% 125%;
-  background-position: 100% 50%;
-  background-repeat: no-repeat, no-repeat;
+.first-container {
   background-color: #191c26;
 }
-.contacts {
-  width: 1200px;
-  padding: 0;
+.second-container {
+  background-image: linear-gradient(rgba(25, 28, 38, 0.9), rgba(25, 28, 38, 0.9)),
+    url('../images/contacts-mob.jpg');
+  background-size: cover;
 
-  display: flex;
-  justify-content: space-between;
+  background-repeat: no-repeat;
 }
+// .contact-section {
+//   flex-basis: calc(50% - 15px);
+// }
+// .contacts-info-container {
+//   background-image: linear-gradient(rgba(25, 28, 38, 0.9), rgba(25, 28, 38, 0.9)),
+//     url('../images/contacts-mob.jpg');
 
-.contact-section {
-  flex-basis: calc(50% - 15px);
-}
-.contact-info-section {
-  margin-left: 100px;
-}
+//   background-size: cover;
+
+//   background-repeat: no-repeat, no-repeat;
+// }
 .contact-title {
+  font-style: normal;
+  text-align: center;
   margin-bottom: 44px;
 
   font-weight: 700;
@@ -32,13 +32,9 @@
   color: var(--text-white-color);
 }
 
-.booking-form-container {
-  display: flex;
-}
-
 .form-input {
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 44px;
   background-color: transparent;
   color: var(--text-white-color);
   border: none;
@@ -68,6 +64,8 @@
 }
 
 .send-btn {
+  display: block;
+  margin: 0 auto;
   padding-right: 38px;
   padding-left: 38px;
   color: var(--text-white-color);
@@ -81,7 +79,7 @@
   margin-bottom: 20px;
 }
 .contact-list {
-  margin-bottom: 66px;
+  margin-bottom: 44px;
 }
 .contact-address {
   color: var(--table-text-color);
@@ -155,25 +153,54 @@
 }
 
 @media screen and (min-width: 768px) {
-  .contact-section-main {
+  .second-container {
     background-image: linear-gradient(rgba(25, 28, 38, 0.9), rgba(25, 28, 38, 0.9)),
       url('../images/contacts-table.jpg');
-
-    background-size: 50% 125%;
-    background-position: 100% 50%;
-    background-repeat: no-repeat, no-repeat;
-    background-color: #191c26;
+  }
+  .booking-form-container {
+    display: flex;
+  }
+  .contact-title {
+    text-align: start;
+  }
+  .send-btn {
+    margin: 0;
+  }
+  .booking-book {
+    margin-bottom: 0;
+  }
+  .contact-info-section {
+    display: flex;
+  }
+  // .contact-list {
+  //   width: 330px;
+  // }
+  .working-hours-container {
+    margin-left: 70px;
+    margin-top: 100px;
+  }
+  .contact-list {
+    margin-bottom: 0px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .contact-section-main {
+  .top-block {
+    display: flex;
+  }
+  .first-container {
+    padding-left: 95px;
+  }
+  .second-container {
     background-image: linear-gradient(rgba(25, 28, 38, 0.9), rgba(25, 28, 38, 0.9)),
       url('../images/contacts-desk.jpg');
-
-    background-size: 50% 125%;
-    background-position: 100% 50%;
-    background-repeat: no-repeat, no-repeat;
-    background-color: #191c26;
+    padding-left: 95px;
+  }
+  .contact-info-section {
+    display: block;
+  }
+  .working-hours-container {
+    margin-left: 0px;
+    margin-top: 66px;
   }
 }
