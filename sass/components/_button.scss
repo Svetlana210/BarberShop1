@@ -1,5 +1,6 @@
 .button {
   min-width: 160px;
+  max-width: 190px;
   border-radius: 25px;
   padding: 12px 20px;
 
@@ -17,8 +18,7 @@
 .button-header {
   color: var(--text-white-color);
 
-  transition: color var(--transition-dur-cub),
-    background-color var(--transition-dur-cub);
+  transition: color var(--transition-dur-cub), background-color var(--transition-dur-cub);
 }
 .button-header:hover,
 .button-header:focus {
