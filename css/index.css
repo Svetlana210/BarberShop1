@@ -435,14 +435,14 @@ button {
   top: 4px;
   left: -11px;
   content: "";
-  background-image: url(../../images/Vector.svg);
+  background-image: url(../images/Vector.svg);
   width: 16px;
   height: 15px;
   cursor: pointer;
   transition: background-image var(--transition-dur-cub);
 }
 .modal-form__checkbox:checked + .modal-form__checkbox-desc::before {
-  background-image: url(../../images/check.svg);
+  background-image: url(../images/check.svg);
 }
 
 .user-policy__text {

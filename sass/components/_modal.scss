@@ -152,13 +152,13 @@
     top: 4px;
     left: -11px;
     content: '';
-    background-image: url(../../images/Vector.svg);
+    background-image: url(../images/Vector.svg);
     width: 16px;
     height: 15px;
     cursor: pointer;
     transition: background-image var(--transition-dur-cub);
     .modal-form__checkbox:checked + & {
-      background-image: url(../../images/check.svg);
+      background-image: url(../images/check.svg);
       // fill: var(--accent-color);
     }
   }
